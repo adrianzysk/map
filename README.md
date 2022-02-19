@@ -1,6 +1,6 @@
 # Map
 
-Simple app showing available cars on map with custom markers, popup and some filtering. 
+Simple app showing available cars on map with custom markers, popup and filtering. 
 
 ## Instalation
 
