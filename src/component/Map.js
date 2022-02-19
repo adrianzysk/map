@@ -22,7 +22,7 @@ function Map() {
   const [value, setValue] = useState(0);
   const [selector, setSelector] = useState("ALL");
 
-  // fetching data with in 1s interval
+  // fetching data with 1s interval
 
   useEffect(() => {
     async function fetchData() {
