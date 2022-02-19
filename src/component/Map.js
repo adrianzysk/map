@@ -22,6 +22,8 @@ function Map() {
   const [value, setValue] = useState(0);
   const [selector, setSelector] = useState("ALL");
 
+  // fetching data with in 1s interval
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -44,6 +46,8 @@ function Map() {
     return () => clearInterval(id);
   }, []);
 
+  // Filter data
+
   useEffect(() => {
     try {
       const filtered = data.filter(
@@ -56,6 +60,8 @@ function Map() {
       console.log(error);
     }
   }, [value, map, selector]);
+
+  // setting initial bounds to map
 
   useEffect(() => {
     try {

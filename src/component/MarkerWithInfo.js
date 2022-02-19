@@ -9,9 +9,14 @@ import BatteryGauge from "react-battery-gauge";
 
 function MarkerWithInfo({ vehicle, clusterer }) {
   const [isOpen, setIsOpen] = useState(false);
+
+  // setting popup to open
+
   const toggleOpen = () => {
     setIsOpen(!isOpen);
   };
+
+  // selecting marker for the vehicle
 
   const checkIcon = (vehicle) => {
     if (vehicle.type === "CAR") {
